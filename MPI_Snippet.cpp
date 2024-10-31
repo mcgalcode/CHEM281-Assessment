@@ -2,13 +2,13 @@
 #include <mpi.h>
 
 int main(int argc, char** argv) {
-    MPI_Init(&argc, &argv); // Initialize the MPI environment
+    MPI_Init(&argc, &argv);
 
     int world_size;
-    MPI_Comm_size(MPI_COMM_WORLD, &world_size); // Get the number of processes
+    MPI_Comm_size(MPI_COMM_WORLD, &world_size);
 
     int world_rank;
-    MPI_Comm_rank(MPI_COMM_WORLD, &world_rank); // Get the rank of the current process
+    MPI_Comm_rank(MPI_COMM_WORLD, &world_rank);
 
     const int N = 100; // Size of the array
     int array[N];

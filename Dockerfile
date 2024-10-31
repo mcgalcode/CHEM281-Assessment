@@ -23,7 +23,7 @@ RUN mkdir build && cd build && \
     make && \
     make install && \
     cd ../.. && \
-    rm -rf fmt  # Remove the source code to save space
+    rm -rf fmt
 
 RUN apt-get purge -y --auto-remove \
     build-essential \
